@@ -1,10 +1,10 @@
-Part 1
+Part 1.
 
 How could you update most of the software on your Ubuntu OS?
 ```sudo apt update && sudo apt upgrade```
 
 
-part 2
+part 2.
 
 Screenshot of the Vim File:
 
@@ -21,13 +21,37 @@ for the file:
 
 ```:s|'s/[-[numbs]]*//g'|'s/[-[:digit:]]*//g'|```
 
-part 3
+part 3.
 
 To print logs for the current boot with a priority of warning or more important in pretty JSON format, the following journalctl command can be used:
 
 ```journalctl -b -p warning -o json-pretty```
 
+![image](https://user-images.githubusercontent.com/93286045/206566255-27d7ea61-ada3-4cd2-b381-e1fcfae6aa37.png)
+
+
 The images for the man pages:
+
+Information about these options can be found in the "SYNOPSIS" section of the journalctl man page, as well as in the "OPTIONS" section. 
+
+Make it look pretty
+
+![image](https://user-images.githubusercontent.com/93286045/206565508-f4996cbb-a37b-4f52-a528-bce362416706.png)
+
+
+The -b, -p, and -o options are all described in detail in the "OPTIONS" section.
+
+the -o
+![image](https://user-images.githubusercontent.com/93286045/206564711-7c990252-ec3b-46fb-9f8d-1a55f7710f03.png)
+
+the -b
+![image](https://user-images.githubusercontent.com/93286045/206564904-e2a65a2f-169d-49e7-91e1-5233267d7f4c.png)
+
+the -p
+![image](https://user-images.githubusercontent.com/93286045/206564980-e0027888-af22-4b55-a7e2-b5bba70877f0.png)
+
+
+part 4.
 
 
 
