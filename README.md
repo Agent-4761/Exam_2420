@@ -53,6 +53,42 @@ the -p
 
 part 4.
 
+Scipt without the motd file changes:
+
+```
+#!/bin/bash
+
+file="/etc/passwd"
+
+users=$(grep -E "^.+:x:[1-5][0-0][0-0][0-9]:" $file)
+
+results=$(awk -F ":" '{ print $1 ": " $3 }' <<< "$users")
+
+echo "Regular users with a UID from 1000 to 5000:"
+echo "$results"
+```
+
+Script after changes:
+
+```
+#!/bin/bash
+
+file="/etc/passwd"
+
+users=$(grep -E "^.+:x:[1-5][0-0][0-0][0-9]:" $file)
+
+results=$(awk -F ":" '{ print $1 ": " $3 }' <<< "$users")
+
+echo "$results" > /etc/motd
+```
+
+image of code working:
+![image](https://user-images.githubusercontent.com/93286045/206568225-8c90fdf0-5627-42d8-b91c-a64d6c052cd9.png)
+
+the `W` Command:
+![image](https://user-images.githubusercontent.com/93286045/206568528-931bc4ac-1261-45f2-ac9c-2e0d0fd60c0d.png)
+
+
 
 
 
