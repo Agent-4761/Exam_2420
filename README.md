@@ -88,6 +88,7 @@ image of code working:
 the `W` Command:
 ![image](https://user-images.githubusercontent.com/93286045/206568528-931bc4ac-1261-45f2-ac9c-2e0d0fd60c0d.png)
 
+Part 5.
 
 
 
