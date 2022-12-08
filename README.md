@@ -120,5 +120,19 @@ sudo mv /path/to/part5.service /etc/systemd
 the service file will start automatically at boot: proof maybe
 ![image](https://user-images.githubusercontent.com/93286045/206573827-d427379c-bfae-40e7-a351-21896572f8af.png)
 
+Part 6.
 
+Timer code:
+
+```
+[Unit]
+Description=part5.ervice
+
+[Timer]
+OnBootSec=1m
+OnUnitActiveSec=1d
+
+[Install]
+WantedBy=multi-user.target
+```
 
