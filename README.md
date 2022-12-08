@@ -90,6 +90,35 @@ the `W` Command:
 
 Part 5.
 
+The service file:
+
+```
+[Unit]
+Description=finduser2
+
+[Service]
+Type=simple
+ExecStart=/final_2420/finduser2
+
+[Install]
+WantedBy=multi-user.target
+```
+
+The service file is located: 
+
+```
+/etc/systemd/system
+```
+
+the code to move the service file there:
+
+```
+sudo mv /path/to/part5.service /etc/systemd
+/system/
+```
+
+the service file will start automatically at boot: proof maybe
+![image](https://user-images.githubusercontent.com/93286045/206573827-d427379c-bfae-40e7-a351-21896572f8af.png)
 
 
 
